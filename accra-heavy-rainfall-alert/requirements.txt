@@ -1,0 +1,9 @@
+# Versions pinned to match the Colab run that saved the model (a saved model can fail to load on other versions)
+numpy==2.4.6
+pandas==2.2.3
+scikit-learn==1.6.1
+imbalanced-learn==0.14.2
+joblib
+streamlit
+fastapi
+uvicorn

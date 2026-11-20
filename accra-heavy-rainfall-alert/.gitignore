@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+# The raw HDX file is large and public: download it again with the steps in README.md
+data/raw/
