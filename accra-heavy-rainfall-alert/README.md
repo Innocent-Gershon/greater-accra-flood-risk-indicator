@@ -83,4 +83,5 @@ Own code licence: [choose one and add a LICENSE file]. Third-party packages and 
 
 ## Author
 
-[Your name], [your ALU email]. Supervisor: [name].
+[Innocent Nangah], [i.nangah@alustudent.com]. Supervisor: [
+Elvira Immaculate Khwatenge].
