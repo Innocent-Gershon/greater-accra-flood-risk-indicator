@@ -28,8 +28,7 @@ def format_period(day) -> str:
 
 def render_risk_tab(service: PredictionService) -> None:
     """The main page: choose a period and read the band."""
-    st.title("Heavy-rainfall risk indicator for Greater Accra")
-    st.warning(NOTICE)
+
 
     periods = list(reversed(service.available_periods()))   # newest first
     chosen = st.selectbox(
@@ -77,11 +76,16 @@ def render_about_tab(service: PredictionService) -> None:
     first, last = service.data_range()
     st.header("About, privacy and limits")
 
-    st.subheader("What this is")
+    st.subheader("Limits")
     st.write(
-        "A student prototype made for a university capstone project. It estimates whether the next "
-        "10-day period in Greater Accra will have heavy rain, to support flood early warning. "
-        "It is not an official warning system."
+        "The tool does not detect floods, and heavy rain is only one cause of flooding. Drainage and planning "
+        "also matter. It uses a region-wide average, so it cannot show local conditions in a neighborhood. "
+        "In tests over five time windows, the model beat a calendar-only lookup by a small margin "
+        "(average PR-AUC 0.392 against 0.331), and the bands mostly follow the season. "
+        "For past dates, the model has already seen those periods in training, so their bands look "
+        "better than future forecasts would. The fair tests are in the project notebook. "
+        "A Low band does not mean safe. Two of four documented Accra floods were rated High. "
+        "Residents are not direct users: the tool was built for disaster management officials."
     )
 
     st.subheader("Data and method")
@@ -126,6 +130,9 @@ try:
 except FileNotFoundError as error:
     st.error(f"The app cannot start because a file is missing. {error}")
     st.stop()
+
+st.title("Heavy-rainfall risk indicator for Greater Accra")
+st.warning(NOTICE)
 
 risk_tab, about_tab = st.tabs(["Risk for a period", "About, privacy and limits"])
 with risk_tab:

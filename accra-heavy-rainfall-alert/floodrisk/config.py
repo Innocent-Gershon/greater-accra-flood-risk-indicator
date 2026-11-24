@@ -17,5 +17,5 @@ DATE_COLUMN = "date"
 TARGET_COLUMN = "next_heavy_b"   # 1 if the next 10-day period was heavy rain
 
 # Shown on the dashboard's About page. Replace both placeholders before you deploy.
-CONTACT_EMAIL = "[add your ALU email here]"
-DATA_ATTRIBUTION = "[copy the attribution and licence text from the HDX dataset page]"
+CONTACT_EMAIL = "[i.nangah@alustudent.com]"
+DATA_ATTRIBUTION = "Source: World Food Programme (WFP), Ghana: Rainfall Indicators at Subnational Level, Humanitarian Data Exchange (HDX). Rainfall data based on CHIRPS version 2 and CHIRPS-GEFS. Dataset: https://data.humdata.org/dataset/gha-rainfall-subnational. License: Creative Commons Attribution 4.0 International (CC BY 4.0)."
