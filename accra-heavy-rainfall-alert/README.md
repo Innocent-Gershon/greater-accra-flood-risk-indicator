@@ -8,9 +8,8 @@ and shows a Low, Typical or High band with the share of past periods that were f
 No flood records were available, so heavy rain (a 10-day total above 58.4 mm) is a stand-in.
 It works for the whole region, not for individual neighborhoods, and it is not an official warning system.
 
-- Walkthrough video: [add link]
-- Technical report: [add link]
-- Live dashboard (if deployed): [add link]
+- Walkthrough video: [https://vimeo.com/1250602890?fl=ip&fe=ec]
+- Live dashboard (if deployed): http://localhost:8501/
 
 ## What is in this repository
 
